@@ -122,3 +122,21 @@ body {
   letter-spacing: 0.5px;
   line-height: 1.5;
 }
+
+@media (max-width: 800px) {
+  .meals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .meals {
+    grid-template-columns: 1fr;
+  }
+  .colection {
+    display: flex;
+    flex-direction: column;
+  }
+  .text {
+    width: 200px;
+  }
+}
