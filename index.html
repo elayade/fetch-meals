@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fetch Meal</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <h1>Search For Meal</h1>
+        <div class="form">
+          <input
+            type="text"
+            class="text"
+            id="text"
+            placeholder="Enter meal ..."
+          />
+          <button class="btn-search" id="btn-search">
+            <i class="fas fa-search fa-2x"></i>
+          </button>
+          <button class="btn-random" id="btn-random">
+            <i class="fas fa-random fa-2x"></i>
+          </button>
+        </div>
+      </nav>
+      <div id="result-heading"></div>
+      <div class="meals" id="meals"></div>
+      <div id="single-meal"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
