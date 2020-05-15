@@ -94,7 +94,9 @@ function addMealToDOM(meal) {
     <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
   </div>
   <h3>Ingredient</h3>
-  <ul class='colection'> ${ingredient.map((ing) => `<li>${ing}</li>`)}</ul>
+  <ul class='colection'> ${ingredient
+    .map((ing) => `<li>${ing}</li>`)
+    .join("")}</ul>
   <h3>Instraction</h3>
   <p>${meal.strInstructions}</p>
   `;
